@@ -614,7 +614,7 @@ section {
   border-radius: 0.5rem;
   margin-bottom: 2rem;
   padding: 1.5rem;
-  box-shadow: 0 0.5rem 1rem var(--box-shadow-color);
+  box-shadow: 0 0.5rem 1rem var(--box-shadow);
 }
 
 .service-title {
@@ -729,4 +729,79 @@ section {
 .about-us-review-container .review-wrapper:nth-child(5) {
   bottom: -23%;
   left: 31%;
+}
+
+/* Faq section */
+#faq-section .section-title {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 8rem;
+  font-weight: 400;
+}
+
+.faq {
+  margin: auto;
+  width: 70%;
+  border-radius: 0.5rem;
+  border: 0.1rem solid var(--accent-color);
+  position: relative;
+  margin-bottom: 2rem;
+  box-shadow: 0.2rem 0.3rem var(--box-shadow);
+}
+
+.question-box {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+  cursor: pointer;
+}
+
+.question {
+  font-weight: 400;
+}
+
+.question-box i {
+  font-size: 1.5rem;
+  text-align: center;
+  transition: 0.25s;
+  color: var(--secondary-text-color);
+}
+
+.answer-box {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: 0.5s;
+  border-top: 0.1rem solid var(--border-color);
+}
+
+.answer {
+  overflow: hidden;
+  line-height: 2rem;
+  padding: 0 2rem;
+}
+
+.faq.active .answer-box {
+  padding: 2rem 0;
+  grid-template-rows: 1fr;
+}
+
+.faq-active .question-box i {
+  transform: rotate(45deg);
+}
+
+.dish-layer {
+  position: absolute;
+  height: 20rem;
+  right: -5%;
+  bottom: -25%;
+  z-index: -1;
+  pointer-events: none;
+}
+
+.dish-layer img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
