@@ -207,7 +207,8 @@ body {
 }
 
 .hero-img-container,
-.food-image-container {
+.food-image-container,
+.download-app-image-container {
   min-width: 30rem;
   min-height: 30rem;
   position: relative;
@@ -332,7 +333,7 @@ body {
 }
 
 .section-details {
-  width: 45px;
+  /* width: 45px; */
   min-width: 300px;
   margin-left: auto;
 }
@@ -341,6 +342,7 @@ body {
   padding: 0.5rem 1rem;
   border-radius: 0.2rem;
   color: var(--secondary-color);
+  background: var(--phone-app-shadow);
 }
 
 .section-title {
@@ -804,4 +806,48 @@ section {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+/* Download-app section */
+.download-btn-group {
+  display: flex;
+  margin-top: 3rem;
+  gap: 1.5rem;
+}
+
+.download-btn-group img {
+  width: 10rem;
+}
+
+.pulse {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.pulse .circle {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.9);
+  border: none;
+  background: var(--accent-color);
+  border-radius: 100%;
+}
+
+.pulse .circle:nth-child(2) {
+  transform: translate(-50%, -50%) scale(1);
+  border: 0.2rem solid var(--accent-color);
+  background: transparent;
+}
+
+.phone-mockup {
+  position: absolute;
+  height: 100%;
+  left: 50%;
+  transform: translate(-50%) scale(1.1) rotate(5deg);
+  box-shadow: 0 2.5rem 6.25rem var(--phone-app-shadow);
+  border-radius: 2rem;
 }
