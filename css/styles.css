@@ -924,3 +924,109 @@ section {
   top: 90%;
   right: 2rem;
 }
+
+/* footer */
+
+#footer {
+  position: relative;
+  padding: 4rem 10vw 8rem;
+  display: flex;
+  gap: 5rem;
+  background: var(--accent-color);
+}
+
+.company-info .logo {
+  height: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.social-links {
+  display: flex;
+  gap: 1rem;
+}
+
+.social-links a {
+  width: 3rem;
+  height: 3rem;
+  padding: 0.5rem;
+  border-radius: 100%;
+  background: var(--primary-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: var(--primary-text-color);
+  font-size: 1.5rem;
+  transition: 0.5s;
+}
+
+#footer .donwload-btn img {
+  width: 8rem;
+}
+
+.footer-links-container {
+  margin-left: auto;
+}
+
+.footer-links-container.contact {
+  width: 20%;
+}
+
+.footer-links-title {
+  text-transform: capitalize;
+  margin-bottom: 1rem;
+  color: var(--secondary-text-color);
+  font-size: 1rem;
+}
+
+.footer-links,
+.footer-text {
+  color: var(--primary-text-color);
+  text-decoration: none;
+  margin-bottom: 0.5rem;
+  line-height: 1.5rem;
+  display: block;
+  opacity: 0.75;
+  text-transform: capitalize;
+  font-weight: bold;
+}
+
+.footer-links:hover {
+  opacity: 1;
+  color: var(--secondary-color);
+}
+
+.footer-text {
+  margin-bottom: 1rem;
+}
+
+.payment-patners {
+  position: absolute;
+  display: flex;
+  gap: 1rem;
+  right: 20%;
+  bottom: 20%;
+}
+
+.payment-patners img {
+  height: 2rem;
+}
+
+.payment-patners-text {
+  position: absolute;
+  bottom: 12%;
+  right: 10vw;
+  font-size: 0.8rem;
+  opacity: 0.5;
+}
+
+.copyright {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  text-align: center;
+  padding: 0.5rem;
+  color: var(--light-text-color);
+  background: var(--secondary-color);
+}
