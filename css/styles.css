@@ -1030,3 +1030,233 @@ section {
   color: var(--light-text-color);
   background: var(--secondary-color);
 }
+
+/* Media Query */
+
+@media (max-width: 1200px) {
+  html {
+    font-size: 14.5px;
+  }
+
+  #hero-section {
+    min-height: auto;
+    padding: 10rem 10vw;
+  }
+
+  .hero-content {
+    width: 50%;
+  }
+
+  .hero-img-container {
+    transform: scale(0.85) translateX(2rem);
+  }
+
+  .hero-img:nth-child(1) {
+    width: 18rem;
+    left: -5%;
+    top: -5%;
+  }
+
+  .hero-img:nth-child(2) {
+    width: 15rem;
+    right: -9%;
+    top: 17%;
+  }
+
+  .hero-img:nth-child(3) {
+    width: 12rem;
+    left: 55%;
+    bottom: -20%s;
+  }
+
+  .review-box {
+    width: 25rem;
+    bottom: 0;
+    left: 0;
+  }
+
+  /* Section */
+  section {
+    padding: 3rem 10vw;
+  }
+
+  /* restaurant section */
+
+  .food-image-container {
+    transform: scale(0.75) translateX(-6rem);
+  }
+
+  .restaurant-container {
+    gap: 1.2rem;
+  }
+
+  /* about-us-review-container */
+  .about-us-review-container,
+  .download-app-image-container {
+    transform: scale(0.9) translateX(-15%);
+  }
+
+  /* Faq */
+
+  .faq {
+    width: 100%;
+  }
+
+  #download-app-section .section-title {
+    font-size: 3.5rem;
+  }
+
+  .dish-layer {
+    transform: scale(0.85) translateX(4rem);
+  }
+}
+
+@media (max-width: 998px) {
+  html {
+    font-size: 13.5px;
+  }
+
+  section,
+  footer {
+    padding: 3rem 7vw;
+  }
+
+  .navbar {
+    padding: 0 7vw;
+  }
+
+  #hero-section {
+    padding: 5rem 7vw;
+  }
+
+  .hero-img-container {
+    transform: scale(0.75) translateX(2rem);
+  }
+
+  .hero-heading {
+    font-size: 3.5rem;
+  }
+
+  .hero-line {
+    margin-top: 0.5rem;
+  }
+
+  .hero-action-btn-container {
+    gap: 1rem;
+  }
+
+  #hero-section .review {
+    font-size: 1.3rem;
+    line-height: 2.3rem;
+  }
+
+  /* restaurant section */
+
+  .food-image-container {
+    transform: scale(0.75) translate(-10%);
+  }
+
+  .food-img:nth-child(2) {
+    width: 10rem;
+    left: 95%;
+    top: 20%;
+  }
+
+  .food-img:nth-child(3) {
+    width: 8rem;
+    left: 99%;
+  }
+
+  .food-img:nth-child(4) {
+    width: 6rem;
+    left: 75%;
+  }
+
+  .food-img:nth-child(5) {
+    width: 5rem;
+    left: 33%;
+    top: 97%;
+  }
+
+  .food-img:nth-child(6) {
+    left: 8%;
+    top: 77%;
+  }
+
+  /* about */
+  .about {
+    padding: 5rem 10vw;
+  }
+
+  .about-us-review-container {
+    display: none;
+  }
+
+  .about {
+    padding: 0;
+    width: 100%;
+  }
+
+  .about-info {
+    width: 70%;
+  }
+
+  .service-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+
+  .service {
+    margin-bottom: 0;
+  }
+
+  /* discount */
+
+  .discount-banner {
+    margin: 0 5vw 5rem;
+  }
+
+  #footer {
+    padding: 5vw;
+    padding-bottom: 5rem;
+    flex-direction: column;
+    gap: 2.5rem;
+  }
+
+  .footer-links-container {
+    margin-left: 0;
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+
+  .footer-links-title {
+    display: block;
+    min-width: 100%;
+    margin-bottom: 0;
+  }
+
+  .footer-links-container.contact {
+    width: 100%;
+  }
+
+  .company-info .logo {
+    margin-bottom: 2rem;
+  }
+
+  .download-btn-group {
+    margin-top: 2rem;
+  }
+
+  .payment-patners {
+    position: relative;
+    flex-wrap: wrap;
+    right: auto;
+  }
+
+  .payment-patners-text {
+    right: auto;
+    position: relative;
+  }
+}
